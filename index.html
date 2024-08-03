@@ -19,6 +19,9 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+
+        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
     </head>
 
     <body>
@@ -31,7 +34,7 @@
             <ul class="navlist">
                 <li><a href="#home">Home</a></li>
                 <li><a href="#about">About</a></li>
-                <li><a href="#projects">Projects</a></li>
+                <li><a href="#portfolio">Projects</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
 
@@ -42,7 +45,7 @@
 
         <!--hero-->
         <section class="hero" id="home">
-            <div class="main-content">
+            <div class="main-content" data-aos="fade-in">
                 <h4>Hi, There!</h4>
                 <h1>I'm <span> Sriraksha</span></h1>
                 <p>Hula hula re hule hule. Hula hula re hule hule. Hula hula re hule hule. Hula hula re hule hule. </p>
@@ -61,11 +64,11 @@
         </section>
 
         <section class="about" id="about">
-            <div class="about-img">
+            <div class="about-img" data-aos="zoom-in-down">
                 <img src="img/Sriraksha_photo.jpg">
             </div>
 
-            <div class="about-text">
+            <div class="about-text" data-aos="zoom-in-up">
                 <h2>I am Product <span>Designer</span> <br> & Web Developer</h2>
                 <div class="exp-area">
                     <p class="exp">
@@ -91,10 +94,130 @@
 
                 <a href="#" class="btn">View all projects</a>
             </div>
-
         </section>
+
+        <!--portfolio-->
+        <section class="portfolio" id="portfolio">
+            <div class="center-text">
+                <h2>My <span>Projects</span></h2>
+            </div>
+
+            <div class="portfolio-content">
+                <div class="row">
+                    <img src="img/a.png">
+                    <div class="main-row">
+                        <div class="row-text";>
+                            <h5>Website Design</h5>
+                        </div>
+                        <div class="row-icon">
+                            <i class="ri-github-fill"></i>
+                        </div>
+                    </div>
+                    <h4>BlaBla</h4>
+                </div>
+
+                <div class="row">
+                    <img src="img/a.png">
+                    <div class="main-row">
+                        <div class="row-text";>
+                            <h5>AWS</h5>
+                        </div>
+                        <div class="row-icon">
+                            <i class="ri-github-fill"></i>
+                        </div>
+                    </div>
+                    <h4>BLaBla</h4>
+                </div>
+
+                <div class="row">
+                    <img src="img/a.png">
+                    <div class="main-row">
+                        <div class="row-text";>
+                            <h5>C++</h5>
+                        </div>
+                        <div class="row-icon">
+                            <i class="ri-github-fill"></i>
+                        </div>
+                    </div>
+                    <h4>BlaBla</h4>
+                </div>
+
+                <div class="row">
+                    <img src="img/a.png">
+                    <div class="main-row">
+                        <div class="row-text";>
+                            <h5>Android dev</h5>
+                        </div>
+                        <div class="row-icon">
+                            <i class="ri-github-fill"></i>
+                        </div>
+                    </div>
+                    <h4>BlaBla</h4>
+                </div>
+
+                <div class="row">
+                    <img src="img/a.png">
+                    <div class="main-row">
+                        <div class="row-text";>
+                            <h5>HTML</h5>
+                        </div>
+                        <div class="row-icon">
+                            <i class="ri-github-fill"></i>
+                        </div>
+                    </div>
+                    <h4>BlaBla</h4>
+                </div>
+
+                <div class="row">
+                    <img src="img/a.png">
+                    <div class="main-row">
+                        <div class="row-text";>
+                            <h5>IoT</h5>
+                        </div>
+                        <div class="row-icon">
+                            <i class="ri-github-fill"></i>
+                        </div>
+                    </div>
+                    <h4>BlaBla</h4>
+                </div>
+            </div>
+        </section>
+
+        <!--contact-->
+        <section class="contact" id="contact">
+            <div class="center-text">
+                <h2>Send a <span>Hello!</span></h2>            
+            </div>
+
+            <div class="contact-form">
+                <form action="">
+                    <input type="text" placeholder="Your good name" required>
+                    <input type="email" placeholder="Email address" required>
+                    <textarea name="" id="" cols="30" rows="10" placeholder="Say Hello!" required></textarea>
+                    <input type="submit" name="" value="Send Message" class="send-btn">
+                </form>
+            </div>
+        </section>
+
+        <div class="footer">
+            <div class="copyright">
+                <p>2024 Sriraksha, All Rights Reserved.</p>
+            </div>
+
+            <a href="#home" class="scroll-top">
+                <i class="ri-arrow-up-s-fill"></i>
+            </a>
+        </div>
 
         <!--js link-->
         <script src="script.js"></script>
+
+        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+        <script>
+            AOS.init({
+                offset: 300,
+                duration: 1400,
+            });
+        </script>
     </body>
 </html>
